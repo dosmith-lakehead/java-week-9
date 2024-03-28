@@ -36,9 +36,13 @@ public class Student extends Person {
         }
     }
 
+//    public String toString(){
+//        return String.format("%s %s, student number %d", getfirstName(), getlastName(), studentNum );
+//    }
     public String toString(){
-        return String.format("%s %s, student number %d", getfirstName(), getlastName(), studentNum );
+        return String.format("%s %s", getfirstName(), getlastName());
     }
+
 
     public double getAvgGrade(){
         if (grades.isEmpty()){
